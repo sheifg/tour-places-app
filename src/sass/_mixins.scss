@@ -1,0 +1,29 @@
+// mixin can define styles that can be refused
+
+@mixin media-xsm {
+    @media screen and (min-width: 0px) {
+      @content;
+    }
+  }
+  @mixin media-sm {
+    @media screen and (min-width: 576px) {
+      @content;
+    }
+  }
+  @mixin media-md {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  @mixin media-lg {
+    @media screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+  @mixin media-xl {
+    @media screen and (min-width: 1600px) {
+        // The content will be changed render here. It is always included with mixins
+      @content;
+    }
+  }
+

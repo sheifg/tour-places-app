@@ -1,0 +1,35 @@
+@import "../../sass/variables", "../../sass/mixins";
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $cardNavBackground;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 1rem;
+        &:hover {
+            background-color: $backgroundColor;
+            color: $cardNavBackground;
+        }
+    }
+}
+
+// Making the navbar in column for small screens
+// 0px till 576px
+@include media-xsm {
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+// 576px till 1600px
+@include media-sm {
+    .navbar {
+      flex-direction: row;
+    }
+  }

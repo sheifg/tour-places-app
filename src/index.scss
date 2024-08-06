@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Hubballi&display=swap');
+
+@import "./sass/reset", "./sass/variables", "./sass/mixins";
+
+// The only sass file that will be rendered(for styling) it will be this, so we have to import the partials here(partials are indicated with an underscore: _variables..
+
+body {
+    background-color: $backgroundColor;
+    font-family: "Amatic SC", sans-serif;
+}
+
+p {
+    font-family: "Hubballi", sans-serif;
+}

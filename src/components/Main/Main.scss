@@ -1,0 +1,61 @@
+@import "../../sass/variables";
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .card {
+        background-color: $cardNavBackground;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 7px;
+        // when you hover the image and there is a transition, we want to keep th content inside of the card, for that reason we are using overflow: hidden
+        overflow: hidden;
+        position: relative;
+
+        //we need the cardover to go all the way up t
+        &:hover .card-over {
+            transform: translateY(0%);
+        }
+
+        .title {
+            color: $backgroundColor;
+            padding: 1rem;
+            font-size: 1.5rem;
+        }
+    }
+
+    img {
+        width: 500px;
+        height: 350px;
+        object-fit: cover;
+        transition: transform 0.7s ease-in-out;
+
+        &:hover {
+            filter: grayscale(100%);
+            transform: scale(1.2);
+        }
+    }
+
+    // I have to wrapp the image in the div
+    .wrapper {
+        overflow: hidden;
+    }
+
+    .card-over {
+        color: white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, 0.7);
+        font-size: 1.5rem;
+        // at the begining without hivering the card is 100%, that it means is in the botom of the card
+        //A whole height down which is below the card ,thats why we set the overflow to hidden
+        transform: translateY(100%);
+        // make sure than the card-over is on top of the card, we use z-index: 1
+        z-index: 1;
+        transition: transform 0.7s ease-in-out;
+    }
+}
