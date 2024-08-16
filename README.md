@@ -1,7 +1,7 @@
 ## **Tour Places App**
 
 ### *Project Description:*
-Tour places app is a React project and it was created using Vite.
+Tour places app is a React project and it was created using Vite. To style the project it was used Sass.
 
 ### *Getting started:* 
   - First install all the dependencies:
