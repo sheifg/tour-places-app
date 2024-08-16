@@ -1,8 +1,17 @@
-# React + Vite
+## **Tour Places App**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### *Project Description:*
+Tour places app is a React project and it was created using Vite.
 
-Currently, two official plugins are available:
+### *Getting started:* 
+  - First install all the dependencies:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  ```
+  npm install
+  ```
+  - Then to run it locally:
+  ```
+  npm run dev
+  ```
+  - In case that you want to see a live demo, you can find it available in this link:  
+    [Tour Places App](https://tour-places-app-five.vercel.app)
