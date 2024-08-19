@@ -5,7 +5,6 @@ Tour places app is a React project and it was created using Vite. To style the p
 
 ### *Getting started:* 
   - First install all the dependencies:
-
   ```
   npm install
   ```
